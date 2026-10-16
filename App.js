@@ -507,291 +507,350 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: "#160D2B",
+    backgroundColor: "#080D18",
     justifyContent: "center",
     paddingHorizontal: 16,
     paddingVertical: 12,
     overflow: "hidden",
   },
+
   orbOne: {
     position: "absolute",
     width: 260,
     height: 260,
     borderRadius: 130,
-    backgroundColor: "#7628D8",
-    opacity: 0.24,
+    backgroundColor: "#2563EB",
+    opacity: 0.18,
     top: -70,
     right: -90,
   },
+
   orbTwo: {
     position: "absolute",
     width: 230,
     height: 230,
     borderRadius: 115,
-    backgroundColor: "#4530BD",
-    opacity: 0.22,
+    backgroundColor: "#0EA5E9",
+    opacity: 0.13,
     bottom: -40,
     left: -90,
   },
+
   orbThree: {
     position: "absolute",
     width: 150,
     height: 150,
     borderRadius: 75,
-    backgroundColor: "#C084FC",
+    backgroundColor: "#38BDF8",
     opacity: 0.08,
     top: "40%",
     right: -90,
   },
+
   content: {
     width: "100%",
     maxWidth: 426,
     alignSelf: "center",
   },
+
   card: {
-    backgroundColor: "rgba(48, 32, 76, 0.96)",
-    borderRadius: 30,
+    backgroundColor: "#111827",
+    borderRadius: 28,
     borderWidth: 1,
-    borderColor: "rgba(221, 194, 255, 0.3)",
-    padding: 16,
+    borderColor: "#263449",
+    padding: 18,
+
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 18 },
-    shadowOpacity: 0.35,
-    shadowRadius: 28,
+    shadowOffset: {
+      width: 0,
+      height: 15,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 25,
     elevation: 12,
   },
+
   header: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: 18,
+    marginBottom: 20,
   },
+
   titleRow: {
     flexDirection: "row",
     alignItems: "center",
   },
+
   logo: {
-    width: 42,
-    height: 42,
+    width: 44,
+    height: 44,
     borderRadius: 14,
-    backgroundColor: "rgba(192, 132, 252, 0.18)",
+    backgroundColor: "#1E3A8A",
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.4)",
+    borderColor: "#3B82F6",
     alignItems: "center",
     justifyContent: "center",
     marginRight: 10,
   },
+
   logoText: {
-    color: "#E9D5FF",
+    color: "#60A5FA",
     fontSize: 28,
-    fontWeight: "700",
+    fontWeight: "800",
   },
+
   title: {
-    color: "#F5EEFF",
-    fontSize: 13,
+    color: "#F8FAFC",
+    fontSize: 14,
     fontWeight: "800",
     letterSpacing: 1.5,
   },
+
   subtitle: {
-    color: "#B7A2D7",
+    color: "#94A3B8",
     fontSize: 9,
     fontWeight: "600",
     letterSpacing: 1.5,
     marginTop: 4,
   },
+
   historyButton: {
-    backgroundColor: "rgba(192, 132, 252, 0.15)",
+    backgroundColor: "#1E293B",
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.28)",
-    paddingHorizontal: 10,
+    borderColor: "#334155",
+    paddingHorizontal: 12,
     paddingVertical: 10,
-    borderRadius: 13,
+    borderRadius: 12,
   },
+
   historyButtonText: {
-    color: "#E9D5FF",
+    color: "#60A5FA",
     fontSize: 12,
     fontWeight: "700",
   },
+
   display: {
     minHeight: 150,
-    backgroundColor: "rgba(16, 9, 32, 0.75)",
+    backgroundColor: "#020617",
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.23)",
-    borderRadius: 22,
-    paddingHorizontal: 15,
-    paddingVertical: 14,
-    marginBottom: 17,
+    borderColor: "#1E3A5F",
+    borderRadius: 20,
+    paddingHorizontal: 16,
+    paddingVertical: 15,
+    marginBottom: 18,
     overflow: "hidden",
   },
+
   displayHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 14,
   },
+
   displayLabel: {
-    color: "#A995C9",
-    fontSize: 9,
+    color: "#64748B",
+    fontSize: 10,
     fontWeight: "700",
     letterSpacing: 1,
   },
+
   ready: {
-    color: "#C4B5FD",
-    fontSize: 9,
+    color: "#22C55E",
+    fontSize: 10,
     fontWeight: "700",
   },
+
   displayScroll: {
     flexGrow: 1,
     minHeight: 52,
     justifyContent: "center",
     alignItems: "flex-end",
   },
+
   result: {
-    color: "#F5EEFF",
+    color: "#F8FAFC",
     fontWeight: "500",
     letterSpacing: 0.5,
   },
+
   finalResult: {
-    color: "#D8B4FE",
-    fontWeight: "700",
+    color: "#38BDF8",
+    fontWeight: "800",
   },
+
   errorResult: {
-    color: "#FDA4AF",
+    color: "#FB7185",
   },
+
   answerRow: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 10,
   },
+
   answerLine: {
     flex: 1,
     height: 1,
-    backgroundColor: "rgba(216, 180, 254, 0.16)",
+    backgroundColor: "#1E293B",
     marginRight: 10,
   },
+
   answerText: {
-    color: "#A995C9",
+    color: "#94A3B8",
     fontSize: 10,
     fontWeight: "600",
   },
+
   keypad: {},
+
   buttonRow: {
     flexDirection: "row",
-    marginBottom: 9,
+    marginBottom: 10,
   },
+
   button: {
     flex: 1,
-    height: 55,
-    borderRadius: 16,
+    height: 56,
+    borderRadius: 15,
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
   },
+
   buttonSpacing: {
-    marginRight: 9,
+    marginRight: 10,
   },
+
   numberButton: {
-    backgroundColor: "rgba(174, 145, 220, 0.12)",
-    borderColor: "rgba(216, 180, 254, 0.17)",
+    backgroundColor: "#1E293B",
+    borderColor: "#334155",
   },
+
   utilityButton: {
-    backgroundColor: "rgba(167, 139, 250, 0.2)",
-    borderColor: "rgba(196, 181, 253, 0.25)",
+    backgroundColor: "#172554",
+    borderColor: "#1D4ED8",
   },
+
   actionButton: {
-    backgroundColor: "rgba(192, 132, 252, 0.15)",
-    borderColor: "rgba(216, 180, 254, 0.25)",
+    backgroundColor: "#1E3A8A",
+    borderColor: "#2563EB",
   },
+
   scientificButton: {
-    backgroundColor: "rgba(126, 87, 194, 0.22)",
-    borderColor: "rgba(196, 181, 253, 0.22)",
+    backgroundColor: "#0F2747",
+    borderColor: "#1E40AF",
   },
+
   operatorButton: {
-    backgroundColor: "rgba(139, 92, 246, 0.25)",
-    borderColor: "rgba(196, 181, 253, 0.3)",
+    backgroundColor: "#1D4ED8",
+    borderColor: "#3B82F6",
   },
+
   equalsButton: {
-    backgroundColor: "#A855F7",
-    borderColor: "#C084FC",
+    backgroundColor: "#059669",
+    borderColor: "#10B981",
     elevation: 5,
-    shadowColor: "#A855F7",
-    shadowOffset: { width: 0, height: 4 },
+
+    shadowColor: "#10B981",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
     shadowOpacity: 0.35,
     shadowRadius: 8,
   },
+
   buttonText: {
     fontSize: 20,
     fontWeight: "600",
   },
+
   numberText: {
-    color: "#F5EEFF",
-    fontSize: 21,
+    color: "#F8FAFC",
+    fontSize: 22,
+    fontWeight: "600",
   },
+
   utilityText: {
-    color: "#E9D5FF",
+    color: "#93C5FD",
     fontSize: 18,
+    fontWeight: "700",
   },
+
   actionText: {
-    color: "#E9D5FF",
+    color: "#BFDBFE",
     fontSize: 14,
     fontWeight: "700",
   },
+
   scientificText: {
-    color: "#D8B4FE",
+    color: "#7DD3FC",
     fontSize: 15,
     fontWeight: "700",
   },
+
   operatorText: {
-    color: "#D8B4FE",
+    color: "#FFFFFF",
     fontSize: 25,
+    fontWeight: "700",
   },
+
   equalsText: {
-    color: "#FFF",
+    color: "#FFFFFF",
     fontSize: 27,
     fontWeight: "800",
   },
+
   footer: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 8,
+    marginTop: 10,
   },
+
   footerLine: {
     flex: 1,
     height: 1,
-    backgroundColor: "rgba(216, 180, 254, 0.15)",
+    backgroundColor: "#334155",
   },
+
   footerText: {
-    color: "#A995C9",
+    color: "#64748B",
     fontSize: 8,
     fontWeight: "700",
     letterSpacing: 1.5,
     marginHorizontal: 8,
   },
+
   modalOverlay: {
     flex: 1,
-    backgroundColor: "rgba(8, 4, 18, 0.78)",
+    backgroundColor: "rgba(0, 0, 0, 0.8)",
     justifyContent: "flex-end",
   },
+
   modalContent: {
-    backgroundColor: "#241638",
+    backgroundColor: "#111827",
     borderTopLeftRadius: 28,
     borderTopRightRadius: 28,
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.22)",
+    borderColor: "#334155",
     paddingHorizontal: 20,
     paddingTop: 12,
     paddingBottom: 24,
     maxHeight: "80%",
     minHeight: 330,
   },
+
   modalHandle: {
     alignSelf: "center",
     width: 42,
     height: 4,
     borderRadius: 4,
-    backgroundColor: "#79628F",
+    backgroundColor: "#475569",
     marginBottom: 20,
   },
+
   modalHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -799,105 +858,121 @@ const styles = StyleSheet.create({
     marginBottom: 18,
     paddingBottom: 15,
     borderBottomWidth: 1,
-    borderBottomColor: "rgba(216, 180, 254, 0.13)",
+    borderBottomColor: "#334155",
   },
+
   modalEyebrow: {
-    color: "#B7A2D7",
+    color: "#94A3B8",
     fontSize: 9,
     fontWeight: "700",
     letterSpacing: 1.5,
     marginBottom: 5,
   },
+
   modalTitle: {
     fontSize: 25,
     fontWeight: "800",
-    color: "#F5EEFF",
+    color: "#F8FAFC",
   },
+
   closeButton: {
     width: 38,
     height: 38,
     borderRadius: 13,
-    backgroundColor: "rgba(192, 132, 252, 0.12)",
+    backgroundColor: "#1E293B",
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.18)",
+    borderColor: "#334155",
     alignItems: "center",
     justifyContent: "center",
   },
+
   closeText: {
     fontSize: 17,
-    color: "#D8B4FE",
+    color: "#60A5FA",
     fontWeight: "700",
   },
+
   emptyHistory: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 30,
   },
+
   emptyIcon: {
-    color: "#D8B4FE",
+    color: "#3B82F6",
     fontSize: 38,
     marginBottom: 14,
   },
+
   emptyTitle: {
-    color: "#F5EEFF",
+    color: "#F8FAFC",
     fontSize: 17,
     fontWeight: "700",
     marginBottom: 7,
   },
+
   emptyText: {
-    color: "#A995C9",
+    color: "#94A3B8",
     fontSize: 13,
     textAlign: "center",
   },
+
   historyList: {
     paddingBottom: 8,
   },
+
   historyItem: {
-    backgroundColor: "rgba(174, 145, 220, 0.08)",
+    backgroundColor: "#1E293B",
     borderWidth: 1,
-    borderColor: "rgba(216, 180, 254, 0.13)",
+    borderColor: "#334155",
     borderRadius: 16,
     padding: 14,
     marginBottom: 10,
   },
+
   historyExpr: {
-    color: "#B7A2D7",
+    color: "#94A3B8",
     fontSize: 13,
     textAlign: "right",
     marginBottom: 8,
   },
+
   historyResult: {
-    color: "#F5EEFF",
+    color: "#38BDF8",
     fontSize: 21,
     fontWeight: "800",
     textAlign: "right",
   },
+
   clearHistoryButton: {
     marginTop: 8,
-    backgroundColor: "rgba(251, 113, 133, 0.09)",
+    backgroundColor: "#450A0A",
     borderWidth: 1,
-    borderColor: "rgba(251, 113, 133, 0.22)",
+    borderColor: "#991B1B",
     padding: 13,
     borderRadius: 14,
     alignItems: "center",
   },
+
   clearHistoryText: {
-    color: "#FDA4AF",
+    color: "#F87171",
     fontWeight: "700",
     fontSize: 13,
   },
+
   doneButton: {
     marginTop: 10,
-    backgroundColor: "#8B5CF6",
+    backgroundColor: "#2563EB",
     borderWidth: 1,
-    borderColor: "#A78BFA",
+    borderColor: "#3B82F6",
     padding: 14,
     borderRadius: 15,
     alignItems: "center",
   },
+
   doneText: {
-    color: "#FFF",
+    color: "#FFFFFF",
     fontWeight: "800",
     fontSize: 15,
   },
